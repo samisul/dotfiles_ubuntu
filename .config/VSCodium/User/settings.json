@@ -1,0 +1,159 @@
+{
+  "editor.cursorStyle": "block",
+  "editor.fontFamily": "'JetBrains Mono', 'CascadiaCode'",
+  "editor.fontSize": 14,
+  //"editor.lineHeight": 1.6,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.linkedEditing": true,
+  "debug.console.fontFamily": "JetBrains Mono",
+  "debug.console.fontSize": 16,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.tabSizing": "shrink",
+  "breadcrumbs.enabled": true,
+  "explorer.decorations.colors": false,
+  "workbench.colorCustomizations": {
+    // "editor.background": "#000000",
+    // "terminal.background": "#000000"
+    // "editor.lineHighlightBackground": "#1D2021"
+  },
+
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.fontSize": 15,
+  // "terminal.integrated.lineHeight": 1.5,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "workbench.activityBar.location": "bottom",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "launch": {},
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.statusBar.visible": true,
+  "editor.occurrencesHighlight": "off",
+  "update.showReleaseNotes": false,
+  "zenMode.hideLineNumbers": false,
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.highlightedyank.enable": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["escape"], "commands": [":nohl"] },
+    // NAVIGATION
+    // switch b/w buffers
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.menuBarVisibility": "hidden",
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "explorer.confirmDelete": false,
+  "workbench.sideBar.location": "right",
+  "search.defaultViewMode": "tree",
+  "search.mode": "newEditor",
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "search.seedOnFocus": true,
+  "search.seedWithNearestWord": true,
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "window.commandCenter": false,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "workbench.startupEditor": "none",
+  "terminal.external.linuxExec": "kitty",
+  "workbench.panel.opensMaximized": "always",
+  "svelte.enable-ts-plugin": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.bracketPairs": "active",
+  "prettier.bracketSameLine": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "window.enableMenuBarMnemonics": false,
+  "window.customMenuBarAltFocus": false,
+  "window.titleBarStyle": "custom",
+  "window.density.editorTabHeight": "default",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "explorer.compactFolders": false,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "debug.inlineValues": "on",
+  "debug.toolBarLocation": "docked",
+  "terminal.integrated.cursorBlinking": false,
+  "search.quickAccess.preserveInput": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.cursorBlinking": "solid"
+}
