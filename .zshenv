@@ -6,10 +6,11 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH=/opt/homebrew/bin:$PATH
 export NOTES_DIR="$HOME/the/antenna/"
 export DOTNET_ROOT=/usr/local/share/dotnet
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
 
 source $ZDOTDIR/.zshrc
 . "$HOME/.cargo/env"
-source $NVM_DIR/nvm.sh
 
 export PNPM_HOME="/home/sami/.local/share/pnpm"
 case ":$PATH:" in

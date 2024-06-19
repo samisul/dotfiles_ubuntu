@@ -44,21 +44,14 @@ unsetopt LIST_BEEP
 unsetopt HIST_BEEP
 unsetopt BEEP
 
-source <(ng completion script)
+# source <(ng completion script)
 
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-if [[ $(uname) == "Darwin" ]]; then
-    source ${ZDOTDIR:-$HOME}/os/.mac-binds.zsh
+source ${ZDOTDIR:-$HOME}/os/.linux-binds.zsh
 
-elif command -v pacman > /dev/null; then
-    source ${ZDOTDIR:-$HOME}/os/.linux-binds.zsh
-
-else
-    echo 'Unknown OS!'
-fi
 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 

@@ -140,7 +140,7 @@ return {
         cssls = {},
         svelte = {},
         clangd = {},
-        gopls = {},
+        -- gopls = {},
         tsserver = {},
         html = { filetypes = { 'html', 'twig', 'hbs' } },
         lua_ls = {
