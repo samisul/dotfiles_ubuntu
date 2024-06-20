@@ -14,16 +14,10 @@ _comp_options+=(globdots)
 
 setopt PROMPT_SUBST
 
-## import aliases if file exists
-if [ -f $ZDOTDIR/.zsh_aliases.zsh ]; then
-    . $ZDOTDIR/.zsh_aliases.zsh
-fi
-
 setopt AUTO_CD
 setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
 setopt PUSHD_SILENT
-
 unsetopt menu_complete
 unsetopt flowcontrol
 setopt prompt_subst
@@ -39,19 +33,16 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 setopt no_list_ambiguous
-
 unsetopt LIST_BEEP
 unsetopt HIST_BEEP
 unsetopt BEEP
-
-# source <(ng completion script)
 
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-source ${ZDOTDIR:-$HOME}/os/.linux-binds.zsh
-
+source ${ZDOTDIR:-$HOME}/.binds.zsh
+source $ZDOTDIR/.aliases.zsh
 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
