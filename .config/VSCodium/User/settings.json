@@ -1,7 +1,7 @@
 {
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'JetBrains Mono', 'CascadiaCode'",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "'Source Code Pro', 'CascadiaCode'",
+  "editor.fontSize": 15,
   //"editor.lineHeight": 1.6,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
@@ -10,7 +10,7 @@
   "debug.console.fontFamily": "JetBrains Mono",
   "debug.console.fontSize": 16,
   "editor.minimap.enabled": false,
-  "editor.renderLineHighlight": "gutter",
+  // "editor.renderLineHighlight": "gutter",
   "workbench.editor.showIcons": false,
   "workbench.editor.tabSizing": "shrink",
   "breadcrumbs.enabled": true,
@@ -21,7 +21,7 @@
     // "editor.lineHighlightBackground": "#1D2021"
   },
 
-  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.fontFamily": "'Source Code Pro', 'JetBrainsMono Nerd Font'",
   "terminal.integrated.fontSize": 15,
   // "terminal.integrated.lineHeight": 1.5,
   "extensions.experimental.affinity": {
@@ -155,5 +155,6 @@
   "terminal.integrated.cursorBlinking": false,
   "search.quickAccess.preserveInput": true,
   "github.copilot.editor.enableAutoCompletions": true,
-  "editor.cursorBlinking": "solid"
+  "editor.cursorBlinking": "solid",
+  "window.customTitleBarVisibility": "auto"
 }
