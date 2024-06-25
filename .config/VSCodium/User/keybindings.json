@@ -145,7 +145,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
-    "key": "alt+tab",
+    "key": "shift+tab",
     "command": "hideSuggestWidget",
     "when": "suggestWidgetVisible && textInputFocus"
   },
@@ -179,7 +179,7 @@
     "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
   },
   {
-    "key": "alt+enter",
+    "key": "tab",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   },
