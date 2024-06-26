@@ -189,7 +189,7 @@
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   },
   {
-    "key": "shift+k",
+    "key": "ctrl+k",
     "command": "editor.action.showDefinitionPreviewHover"
   },
   {
