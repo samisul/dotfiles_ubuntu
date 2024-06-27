@@ -89,6 +89,10 @@
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.quickFix"]
     },
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"]
+    },
     { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
     { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
     {
@@ -156,5 +160,6 @@
   "search.quickAccess.preserveInput": true,
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.cursorBlinking": "solid",
-  "window.customTitleBarVisibility": "auto"
+  "window.customTitleBarVisibility": "auto",
+  "redhat.telemetry.enabled": false
 }
