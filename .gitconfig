@@ -15,7 +15,8 @@ br = "branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %
 dc = "diff --cached"
 aa = "add ."
 std = "diff --stat"
-boobs = "!git add . && git commit --amend --no-edit --no-verify && git push -f"
+ap = "!git add -p"
+s = "!git switch"
 
 # Seach commits by commit message.
 sm = "!f() { \
